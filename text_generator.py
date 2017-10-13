@@ -2,6 +2,8 @@ import string,random
 vowels="aeiouy"
 constants="bcdfghjklmnpqrstvwxz"
 letters=string.ascii_lowercase
+
+num_words=input("How many words do you want?  ")
 letter_input_1=input("What letter do you want? Enter 'v' for vowels , 'c' for constants,'l' for any letter  ")
 letter_input_2=input("What letter do you want? Enter 'v' for vowels , 'c' for constants,'l' for any letter  ")
 letter_input_3=input("What letter do you want? Enter 'v' for vowels , 'c' for constants,'l' for any letter  ")
@@ -24,5 +26,6 @@ def generator():
     
     word=letter1+letter2+letter3
     return(word)
-print(generator())
+for i in range(1,int(num_words)+1):
+    print(generator())
     
